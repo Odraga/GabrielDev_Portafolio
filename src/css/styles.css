@@ -1,0 +1,339 @@
+#reset-this-root {
+  all: initial;
+  font-family: fantasy;
+  font-size: 18px;
+  color: gray;
+}
+
+/*NAVBAR STYLE*/
+.navbar {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.navbar-brand {
+  position: absolute;
+  text-decoration: none;
+  color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-left: 1.5rem;
+}
+
+.navbar-brand:hover {
+  cursor: grab;
+  color: blue;
+}
+
+.navbar-item {
+  margin-right: 1.5rem;
+  display: inline-flex;
+}
+
+.navbar-item a {
+  text-decoration: none;
+}
+
+.navbar-item a:hover {
+  color: gray;
+}
+
+/*END NAVBAR STYLE*/
+
+/*BRACKGROUND COLOR*/
+.bgc-primary {
+  background-color: yellow;
+}
+.bgc-secondary {
+  background-color: gray;
+}
+.bgc-red {
+  background-color: red;
+}
+.bgc-white {
+  background-color: white;
+}
+
+.bgc-black {
+  background-color: black;
+}
+
+/*END BACKGROUND COLOR*/
+
+/*VIEWPORT HEIGHT*/
+.vh-50 {
+  height: 50vh;
+}
+.vh-75 {
+  height: 75vh;
+}
+.vh-100 {
+  height: 100vh;
+}
+/*END VIEWPORT HEIGHT*/
+
+/*VIEWPORT WIDTH*/
+.vw-50 {
+  width: 50vw;
+}
+.vw-75 {
+  width: 75vw;
+}
+.vw-100 {
+  width: 100vw;
+}
+/*END VIEWPORT WIDTH*/
+
+/*MARGIN*/
+.m-0 {
+  margin: 0;
+}
+.mt-0 {
+  margin-top: 0 !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+/*END MARGIN*/
+
+/*FLEX*/
+.flex-column {
+  flex-direction: column;
+}
+/*END FLEX*/
+
+/*JUSTIFY*/
+.justify-content-center {
+  justify-content: center;
+}
+/*END JUSTIFY*/
+
+/*ALIGN*/
+.align-items-center {
+  align-items: center;
+}
+/*END ALIGN*/
+
+/*POSITION*/
+.position-absolute {
+  position: absolute;
+}
+.position-relative {
+  position: relative;
+}
+.position-fixed {
+  position: fixed;
+}
+/*END POSITION*/
+
+/*DISPLAY*/
+.d-none {
+  display: none;
+}
+.d-flex {
+  display: flex;
+}
+.d-block {
+  display: block;
+}
+/*END DISPLAY*/
+
+/*BORDER*/
+.rounded-circle {
+  border-radius: 50%;
+}
+
+.border {
+  border: 3px solid rgba(128, 128, 128, 0.5);
+}
+
+.line-buttom {
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+/*END BORDER*/
+
+/*ANIMATION*/
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotating-inverse {
+  from {
+    -webkit-transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes rotating-anormal {
+  from {
+    -webkit-transform: rotate(180deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.rotating-normal {
+  -webkit-animation: rotating 2s linear infinite;
+}
+
+.rotating-anormal {
+  -webkit-animation: rotating-anormal 2s linear infinite;
+}
+
+.rotating-inverse {
+  -webkit-animation: rotating-inverse 2s linear infinite;
+}
+
+/*END ANIMATION*/
+
+/*TRANSFORM*/
+
+.translate-50-50 {
+  transform: translateX(-50%) translateY(-50%);
+}
+.rotate-2 {
+  transform: rotate(0.2turn);
+}
+.rotate-3 {
+  transform: rotate(0.3turn);
+}
+.rotate-4 {
+  transform: rotate(0.4turn);
+}
+.rotate-5 {
+  transform: rotate(0.5turn);
+}
+.rotate-6 {
+  transform: rotate(0.6turn);
+}
+.rotate-8 {
+  transform: rotate(0.8turn);
+}
+/*END TRANSFORM*/
+
+/*WIDTH*/
+.w-50 {
+  width: 50%;
+}
+.w-100 {
+  width: 100%;
+}
+/*END WIDTH*/
+
+/*HEIGHT*/
+.h-50 {
+  height: 50%;
+}
+.h-100 {
+  height: 100%;
+}
+/*END HEIGHT*/
+
+/*TOP*/
+.top-0 {
+  top: 0%;
+}
+.top-25 {
+  top: 25%;
+}
+.top-50 {
+  top: 50%;
+}
+/*END TOP*/
+
+/*BOTTOM*/
+.bottom-0 {
+  bottom: 0%;
+}
+.bottom-50 {
+  bottom: 50%;
+}
+.bottom-100 {
+  bottom: 100%;
+}
+
+/*END BOTTOM*/
+
+/*START*/
+.start-0 {
+  left: 0%;
+}
+.start-25 {
+  left: 25%;
+}
+.start-50 {
+  left: 50%;
+}
+/*END START*/
+
+/*Z-INDEX*/
+.z-1 {
+  z-index: 1;
+}
+.z-100 {
+  z-index: 100;
+}
+/*END Z-INDEX*/
+
+/*OPACITY*/
+.opacity-5 {
+  opacity: 0.5;
+}
+.opacity-8 {
+  opacity: 0.8;
+}
+/*END OPACITY*/
+
+/*OVERFLOW*/
+.overflow-auto {
+  overflow: auto;
+}
+/*END OVERFLOW*/
+/*SMALL*/
+@media (min-width: 576px) {
+  .container-sm {
+    display: block;
+    margin-top: 1.5rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+}
+
+/*MEDIUM*/
+@media (min-width: 768px) {
+  .container-md {
+    display: block;
+    margin-top: 1.5rem;
+    margin-right: 6rem;
+    margin-left: 6rem;
+  }
+}
+
+/*Long*/
+@media (min-width: 992px) {
+  .container-lg {
+    display: block;
+    margin-top: 1.5rem;
+    margin-right: 12rem;
+    margin-left: 12rem;
+  }
+}
+
+/*Extra Long*/
+@media (min-width: 1200px) {
+}
