@@ -12,6 +12,9 @@ const Sidebar = () => {
             <a href={routes.Home.path}>Home</a>
           </li>
           <li className="navbar-item">
+            <a href={routes.Timer.path}>Timer</a>
+          </li>
+          <li className="navbar-item">
             <a href={routes.AboutUs.path}>About</a>
           </li>
           <li className="navbar-item">
