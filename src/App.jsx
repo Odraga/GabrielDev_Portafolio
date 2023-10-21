@@ -9,6 +9,7 @@ import Home from "./components/Home/Home";
 import AboutUs from "./components/About/About";
 import PreLoader from "./components/common/PreLoader";
 import { useEffect, useState } from "react";
+import Timer from "./components/Timer/Timer";
 
 const RouteWithSidebar = ({ element: Element }) => {
   const [show, setShow] = useState(true);
@@ -42,6 +43,10 @@ function App() {
         <Route
           path={routes.Home.path}
           element={<RouteWithSidebar element={Home} />}
+        />
+        <Route
+          path={routes.Timer.path}
+          element={<RouteWithSidebar element={Timer} />}
         />
         <Route
           path={routes.AboutUs.path}
