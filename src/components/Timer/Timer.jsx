@@ -4,7 +4,7 @@ import moment from "moment";
 
 const Timer = () => {
   const [time, setCurrentTime] = useState(moment());
-  const dateLove = new Date("2023-07-23T12:00-0400");
+  const dateLove = new Date("2023-07-23T12:49-0400");
   const [timer, setTimer] = useState({
     years: 0,
     months: 0,
@@ -40,11 +40,14 @@ const Timer = () => {
     }, 1000);
     return () => clearInterval(timer);
   }, [time]);
+
   return (
     <div>
       <div>
         <h2>TIMER</h2>
-        <small>{moment(dateLove).format("DD / MMMM / YYYY - HH:mm")}</small>
+        <small>
+          {moment(dateLove).format("DD / MMMM / YYYY - HH:mm [PM]")}
+        </small>
       </div>
       <br />
       <br />
@@ -83,6 +86,7 @@ const Timer = () => {
           <span>{timer.seconds} </span>
           <strong>Segundos</strong>
         </div>
+        <hr />
       </div>
     </div>
   );
