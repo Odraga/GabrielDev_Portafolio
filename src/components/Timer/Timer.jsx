@@ -20,14 +20,14 @@ const Timer = () => {
 
     const totalYears = moment(time).diff(dateLove, "years");
     const totalMonths = moment(time).diff(dateLove, "months");
-    const totalWeeks = moment(time).diff(dateLove, "weeks");
-    const totalDays = moment(time).diff(dateLove, "days");
+    const totalWeeks = moment(time).diff(dateLove, "days", true) / 7;
+    const totalDays = Math.round(moment(time).diff(dateLove, "days"));
 
     setTimer({
       years: totalYears,
       months: totalMonths - totalYears * 12,
-      weeks: totalWeeks - Math.floor(totalMonths * 4.3482),
-      days: totalDays - totalWeeks * 7,
+      weeks: Math.floor(totalWeeks - totalMonths * 4.3482),
+      days: totalDays - Math.floor(totalWeeks * 7),
       hours: moment(time).diff(dateLove, "hours") % 24,
       minutes: moment(time).diff(dateLove, "minutes") % 60,
       seconds: moment(time).diff(dateLove, "seconds") % 60,
@@ -43,50 +43,50 @@ const Timer = () => {
 
   return (
     <div>
-      <div>
-        <h2>TIMER</h2>
-        <small>
+      <div className="text-center color-primary text-shadow-1 my-4">
+        <h2>
+          TIMER <span className="color-support">(GYM)</span>
+        </h2>
+        <small className="color-orange">
           {moment(dateLove).format("DD / MMMM / YYYY - HH:mm [PM]")}
         </small>
       </div>
-      <br />
-      <br />
-      <div>
+
+      <div className="d-sm-flex justify-content-around mb-2">
         <div>
           <span>{timer.years} </span>
           <strong>Años</strong>
         </div>
-        <hr />
+
         <div>
           <span>{timer.months} </span>
           <strong>Meses</strong>
         </div>
-        <hr />
+
         <div>
           <span>{timer.weeks} </span>
           <strong>Semanas</strong>
         </div>
-        <hr />
+
         <div>
           <span>{timer.days} </span>
           <strong>Dias</strong>
         </div>
-        <hr />
+
         <div>
           <span>{timer.hours} </span>
           <strong>Horas</strong>
         </div>
-        <hr />
+
         <div>
           <span>{timer.minutes} </span>
           <strong>Minutos</strong>
         </div>
-        <hr />
+
         <div>
           <span>{timer.seconds} </span>
           <strong>Segundos</strong>
         </div>
-        <hr />
       </div>
     </div>
   );
