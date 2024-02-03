@@ -96,4 +96,21 @@ export const AllProjects = [
             ]
         }
     }
+    ,
+    {
+        id:6,
+        name:"Sarez Elevadores",
+        description:"",
+        category:"Own Projects",
+        link:"#",
+        stack:"",
+        pictures:{
+            principal:'src/assets/projects/passion_baikers/passionbaikers_principal.jpg',
+            extraPrictures:[
+                '',
+                '',
+                ''
+            ]
+        }
+    }
 ]
