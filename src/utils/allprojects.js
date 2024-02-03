@@ -99,7 +99,7 @@ export const AllProjects = [
     ,
     {
         id:6,
-        name:"Sarez Elevadores",
+        name:"Passion Bikers RD",
         description:"",
         category:"Own Projects",
         link:"#",

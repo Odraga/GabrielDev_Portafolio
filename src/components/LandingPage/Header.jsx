@@ -11,7 +11,7 @@ const Header = () => {
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     height: "16rem",
-    width: "16rem",
+    width: "18rem",
   };
 
   const imagePresentationStyle = {
@@ -23,7 +23,13 @@ const Header = () => {
   };
   return (
     <>
-      <div className="row justify-content-center">
+      <div
+        className="row justify-content-center align-items-center vh-100"
+        style={{
+          backgroundColor: "rgb(215, 190, 168)",
+          boxSizing: "border-box",
+        }}
+      >
         <div className="line-sm-none line-xl-end">
           {/* <div className="scene">
             <div className="sphere">
@@ -34,15 +40,15 @@ const Header = () => {
           </div> */}
         </div>
         <div
-          className="d-flex align-items-center rounded-5 shadow-5 mx-4 mx-md-1"
+          className="d-flex align-items-center rounded-5 shadow-4 mx-4 mx-md-1 w-100"
           style={imagePresentationStyle}
         >
           <div className="fw-light px-2 rounded-5 ms-1">
-            <h1 className="presentation-text color-primary mb-0 text-shadow-1 ms-3 ms-md-0">
+            <h1 className="presentation-text color-white mb-0 text-shadow-1 ms-3 ms-md-0 ">
               Hey, welcome!
             </h1>
             <hr />
-            <p className="presentation-text color-secondary ms-3 ms-md-0">
+            <p className="presentation-text color-darkblue ms-3 ms-md-0">
               I am a Venezuelan with a passion for web development.
             </p>
           </div>

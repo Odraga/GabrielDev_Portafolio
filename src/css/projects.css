@@ -1,11 +1,12 @@
 .selectProject{
     opacity: 1;
     transition: opacity 1.5s, background-color 1.5s;
+    cursor: pointer;
         
 }
 
 .selectProject:hover{
     opacity: 0.6;
     background-color: rgba(0, 0, 0,0.3);
-    cursor: pointer;
+    
 }
