@@ -1,17 +1,16 @@
 //Components
-import Sidebar from "./components/common/Sidebar";
+//import Sidebar from "./components/common/Navigationbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { routes } from "./Routes/routes";
 
 //Compoent
 
-import Home from "./components/Home/Home";
-import AboutUs from "./components/About/About";
+//import AboutUs from "./components/About/About";
 import PreLoader from "./components/common/PreLoader";
 import { useEffect, useState } from "react";
-import Timer from "./components/Timer/Timer";
+//import Timer from "./components/Timer/Timer";
 
-const RouteWithSidebar = ({ element: Element }) => {
+const RouteWithNavbar = ({ element: Element, layout: Layout }) => {
   const [show, setShow] = useState(true);
   useEffect(() => {
     setTimeout(() => {
@@ -20,18 +19,13 @@ const RouteWithSidebar = ({ element: Element }) => {
   }, []);
   return (
     <>
-      <div id={"reset-this-root"}>
-        {!show ? (
-          <>
-            <Sidebar />
-            <div className="container-md container-lg mt-0 mb-0">
-              <Element />
-            </div>
-          </>
-        ) : (
-          <PreLoader />
-        )}
-      </div>
+      {!show ? (
+        <Layout>
+          <Element />
+        </Layout>
+      ) : (
+        <PreLoader />
+      )}
     </>
   );
 };
@@ -41,16 +35,13 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route
-          path={routes.Home.path}
-          element={<RouteWithSidebar element={Home} />}
-        />
-        <Route
-          path={routes.Timer.path}
-          element={<RouteWithSidebar element={Timer} />}
-        />
-        <Route
-          path={routes.AboutUs.path}
-          element={<RouteWithSidebar element={AboutUs} />}
+          path={routes.LandingPage.path}
+          element={
+            <RouteWithNavbar
+              element={routes.LandingPage.component}
+              layout={routes.LandingPage.layout}
+            />
+          }
         />
       </Routes>
     </BrowserRouter>

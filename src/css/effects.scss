@@ -1,0 +1,36 @@
+
+
+/* Media query para hacerlo responsive */
+@media screen and (max-width: 576px) {
+    .presentation-text {
+        white-space: normal;
+        overflow: visible;
+        border-right: 0em solid #000000;
+    }
+}
+
+/* Media query para hacerlo responsive */
+@media screen and (min-width: 576px) {
+    .presentation-text {
+            border-right: 0.1em solid #000000;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 2s steps(60) 1s 1 alternate both, blink 1s steps(1) infinite;
+        }
+    
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+    
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+    
+            to {
+                width: 100%;
+            }
+        }
+}

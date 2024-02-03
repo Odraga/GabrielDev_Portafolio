@@ -1,11 +1,11 @@
 import React from "react";
 import personal_picture from "../../assets/photos/personal_picture.png";
-import "./about.css";
+import "../../css/about.css";
 import cv_pdf from "../../assets/documents/GabrielVargasResume.pdf";
 
 const About = () => {
   return (
-    <div>
+    <div className="container">
       {/* <div className="d-flex justify-content-center my-2 ">
         <img
           src={personal_picture}
@@ -14,7 +14,7 @@ const About = () => {
         />
       </div> */}
 
-      <div className="d-sm-flex justify-content-center about-text border rounded-5 mt-4  shadow-2 transition-shadow-2">
+      {/*  <div className="d-sm-flex justify-content-center about-text border rounded-5 mt-4  shadow-2 transition-shadow-2">
         <div className="mx-4 my-4 color-primary d-flex justify-content-center align-items-center text-shadow-1">
           <h2>ABOUT ME</h2>
         </div>
@@ -49,7 +49,7 @@ const About = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

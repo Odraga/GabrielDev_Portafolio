@@ -44,7 +44,7 @@ const Timer = () => {
 
   return (
     <div>
-      <div className="text-center color-secondary text-shadow-1 my-4">
+      {/* <div className="text-center color-secondary text-shadow-1 my-4">
         <h2>
           TIMER <span className="color-primary ">(GYM)</span>
         </h2>
@@ -102,7 +102,7 @@ const Timer = () => {
             <span className="color-white font-size-2">Segundos</span>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
