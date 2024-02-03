@@ -6,6 +6,9 @@
   font-size: 18px;
   color: gray;
 }
+* {
+  cursor: url("../assets/cursors/cursor.png"), auto;
+}
 /* *{
   width: 100%;
     margin: 0;
@@ -111,6 +114,10 @@
     margin-left: 3rem;
   }
 
+  .size {
+    size: "auto";
+  }
+
   /*FONT*/
   .font-size-1 {
     font-size: 1rem;
@@ -133,6 +140,9 @@
   /*END FONT*/
 
   /*TEXT*/
+  .text-start{
+    text-align: start;
+  }
   .text-center {
     text-align: center;
   }
@@ -1228,6 +1238,77 @@
     }
   
     /*END LINE*/
+
+        /* Clases Col */
+        .col-sm-auto {
+          flex-basis: 0;
+          flex-grow: 1;
+          max-width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+    
+        .col-sm-1 {
+          flex: 0 0 auto;
+          width: 8.33%;
+        }
+    
+        .col-sm-2 {
+          flex: 0 0 auto;
+          width: 16.66%;
+        }
+    
+        .col-sm-3 {
+          flex: 0 0 auto;
+          width: 25%;
+        }
+    
+        .col-sm-4 {
+          flex: 0 0 auto;
+          width: 33.33%;
+        }
+    
+        .col-sm-5 {
+          flex: 0 0 auto;
+          width: 41.66%;
+        }
+    
+        .col-sm-6 {
+          flex: 0 0 auto;
+          width: 50%;
+        }
+    
+        .col-sm-7 {
+          flex: 0 0 auto;
+          width: 58.33%;
+        }
+    
+        .col-sm-8 {
+          flex: 0 0 auto;
+          width: 66.66%;
+        }
+    
+        .col-sm-9 {
+          flex: 0 0 auto;
+          width: 75%;
+        }
+    
+        .col-sm-10 {
+          flex: 0 0 auto;
+          width: 83.33%;
+        }
+    
+        .col-sm-11 {
+          flex: 0 0 auto;
+          width: 91.66%;
+        }
+    
+        .col-sm-12 {
+          flex: 0 0 auto;
+          width: 100%;
+        }
+    
+        /*END GRID*/
 }
 
 /*MEDIUM*/
@@ -1389,31 +1470,31 @@
     margin-left: 16rem !important;
   }
   /*--> MX*/
-  .mx-0 {
+  .mx-md-0 {
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
-  .mx-1 {
+  .mx-md-1 {
     margin-left: 0.5rem !important;
     margin-right: 0.5rem !important;
   }
-  .mx-2 {
+  .mx-md-2 {
     margin-left: 1rem !important;
     margin-right: 1rem !important;
   }
-  .mx-3 {
+  .mx-md-3 {
     margin-left: 1.5rem !important;
     margin-right: 1.5rem !important;
   }
-  .mx-4 {
+  .mx-md-4 {
     margin-left: 2rem !important;
     margin-right: 2rem !important;
   }
-  .mx-5 {
+  .mx-md-5 {
     margin-left: 2.5rem !important;
     margin-right: 2.5rem !important;
   }
-  .mx-6 {
+  .mx-md-6 {
     margin-left: 3rem !important;
     margin-right: 3rem !important;
   }
@@ -1583,6 +1664,77 @@
     }
   
     /*END LINE*/
+
+         /* Clases Col */
+         .col-md-auto {
+           flex-basis: 0;
+           flex-grow: 1;
+           max-width: 100%;
+           padding-right: 15px;
+           padding-left: 15px;
+         }
+    
+         .col-md-1 {
+           flex: 0 0 auto;
+           width: 8.33%;
+         }
+    
+         .col-md-2 {
+           flex: 0 0 auto;
+           width: 16.66%;
+         }
+    
+         .col-md-3 {
+           flex: 0 0 auto;
+           width: 25%;
+         }
+    
+         .col-md-4 {
+           flex: 0 0 auto;
+           width: 33.33%;
+         }
+    
+         .col-md-5 {
+           flex: 0 0 auto;
+           width: 41.66%;
+         }
+    
+         .col-md-6 {
+           flex: 0 0 auto;
+           width: 50%;
+         }
+    
+         .col-md-7 {
+           flex: 0 0 auto;
+           width: 58.33%;
+         }
+    
+         .col-md-8 {
+           flex: 0 0 auto;
+           width: 66.66%;
+         }
+    
+         .col-md-9 {
+           flex: 0 0 auto;
+           width: 75%;
+         }
+    
+         .col-md-10 {
+           flex: 0 0 auto;
+           width: 83.33%;
+         }
+    
+         .col-md-11 {
+           flex: 0 0 auto;
+           width: 91.66%;
+         }
+    
+         .col-md-12 {
+           flex: 0 0 auto;
+           width: 100%;
+         }
+    
+         /*END GRID*/
 }
 
 /*Long*/
