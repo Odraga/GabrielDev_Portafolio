@@ -208,7 +208,15 @@ body, html{
   }
 
   .bgc-brown {
-    background-color: rgb(113, 71, 34)
+    background-color: #710000;
+  }
+
+  .bgc-specialcream{
+    background-color: #FFF6E7;
+  }
+
+  .bgc-specialorange{
+    background-color: #C98028;
   }
 
   .bgc-cream {
@@ -224,6 +232,10 @@ body, html{
 
   .bgc-icecream{
     background-color: #C3FCF1;
+  }
+
+  .bgc-ligthcream{
+    background-color: #DFE0DF;
   }
 
   /*END BACKGROUND COLOR*/
@@ -244,6 +256,10 @@ body, html{
 
   .color-white {
     color: white;
+  }
+
+  .color-specialcream{
+    color: #FFF6E7;
   }
 
   .color-darkwhite{
@@ -898,8 +914,6 @@ body, html{
   .row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
   }
 
   /* Clases Col */
