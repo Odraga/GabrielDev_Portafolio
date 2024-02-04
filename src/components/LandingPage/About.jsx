@@ -8,8 +8,8 @@ const About = () => {
     filter: "drop-shadow(-8px -5px 20px black)",
   };
   return (
-    <div className="row my-4 bgc-icecream rounded-5">
-      <div className="col-sm-12 col-md-4">
+    <div className="row rounded-5">
+      <div className="col-sm-12 col-md-4 bgc-icecream">
         <img
           src={personal_picture}
           style={styleMePicture}
@@ -18,10 +18,12 @@ const About = () => {
           alt=""
         />
       </div>
-      <div className="col-sm-12 col-md-8 text-center text-normal ">
+      <div className="col-sm-12 col-md-8 text-center text-normal bgc-ligthcream">
         <div className="d-flex align-items-center h-100">
-          <h2 className="color-white text-shadow-1 me-2">Gabriel Vargas</h2>
-          {/*  <div className="line-start">
+          <h2 className="color-white text-shadow-1 ms-2 me-2">
+            Gabriel Vargas
+          </h2>
+          <div className="line-start">
             <p className="color-icecream ms-2">
               I am a software developer with experience in front-end and
               back-end development. I have a solid understanding of web
@@ -42,7 +44,7 @@ const About = () => {
                 View CV
               </a>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
