@@ -2,8 +2,11 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="row bgc-black vw-100" style={{ height: "5rem" }}>
-      <span>data</span>
+    <div
+      className="row justify-content-center align-items-center bgc-specialorange"
+      style={{ height: "3rem" }}
+    >
+      <span className="color-specialcream">2024 ❤ by Bugybit</span>
     </div>
   );
 };
