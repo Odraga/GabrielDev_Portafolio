@@ -39,7 +39,7 @@ const Projects = () => {
           return (
             <div key={index} className="row justify-content-center fw-light">
               <div className="col-12 line-bottom">
-                <h3 className="color-brownlight">{category}</h3>
+                <h3>{category}</h3>
               </div>
               {projectsFilters.map((item, index) => (
                 <ProjectCard project={item} key={index} />
