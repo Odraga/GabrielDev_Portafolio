@@ -6,7 +6,9 @@ const Footer = () => {
       className="row justify-content-center align-items-center bgc-specialorange"
       style={{ height: "3rem" }}
     >
-      <span className="color-specialcream">2024 ❤ by Bugybit</span>
+      <span className="color-specialcream">
+        2024 ❤ by Bugybit - Made with React.js
+      </span>
     </div>
   );
 };

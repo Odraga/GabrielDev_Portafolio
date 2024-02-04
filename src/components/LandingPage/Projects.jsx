@@ -13,10 +13,11 @@ const ProjectCard = ({ project }) => {
     margin: "auto",
   };
   return (
-    <div className="col-sm-6 col-md-4 selectProject">
+    <div className="col-sm-6 col-md-4 ">
       <div className="text-center">
-        <span className="color-darkblue">{project.name}</span>
+        <h4 className="">{project.name}</h4>
         <img
+          className="selectProject"
           src={project.pictures.principal}
           style={{ cursor: "pointer" }}
           width={"100%"}
@@ -37,9 +38,11 @@ const Projects = () => {
             (item) => item.category === category
           );
           return (
-            <div key={index} className="row justify-content-center fw-light">
-              <div className="col-12 line-bottom">
-                <h3>{category}</h3>
+            <div key={index} className="row justify-content-center mb-2">
+              <div className="col-12 color-dark ">
+                <h3 className=" fw-light">
+                  {category} <hr />
+                </h3>
               </div>
               {projectsFilters.map((item, index) => (
                 <ProjectCard project={item} key={index} />

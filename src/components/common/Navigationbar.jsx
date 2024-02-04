@@ -7,7 +7,12 @@ const Navigationbar = () => {
       <nav className="m-0 p-0">
         <h2 className="m-0 p-0 d-inline">
           <a className="navbar-brand transition-color-1 mb-3 mt-0" href="#">
-            <img src={catIcon} width={"32px"} alt="" />
+            <img
+              src={catIcon}
+              className="rotating-normal me-1"
+              width={"32px"}
+              alt=""
+            />
             GABRIEL DEV
           </a>
         </h2>

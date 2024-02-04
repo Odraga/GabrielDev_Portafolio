@@ -1,5 +1,5 @@
 import React from "react";
-import fotonice from "../../assets/photos/fotonice.jpg";
+import fotonice from "../../assets/photos/fotonice.png";
 import presentation from "../../assets/photos/wisuda.gif";
 
 import "../../css/effects.scss";
